@@ -52,7 +52,7 @@ const Nav = ({
               </svg>
             </div>
             <ul
-              tabIndex="-1"
+              tabIndex={-1}
               className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 shadow-sm ml-2"
             >
               <li>

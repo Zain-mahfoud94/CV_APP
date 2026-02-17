@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { fadeUp } from "../animations/motionVariants";
 import { useIntersection } from "../hooks/useIntersection";
 
 interface Props {
@@ -14,7 +13,7 @@ export default function AnimatedSection({ children, className, id }: Props) {
   return (
     <div ref={ref} id={id} className={className}>
       {visible && (
-        <motion.div variants={fadeUp} initial="hidden" animate="visible">
+        <motion.div initial="hidden" animate="visible">
           {children}
         </motion.div>
       )}

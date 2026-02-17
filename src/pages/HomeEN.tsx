@@ -75,7 +75,7 @@ const HomeEN = () => {
           </p>
           <a
             href="mailto:zain.mah@hotmail.com"
-            className="w-22 h-8 text-center p-0.5 m-0.5 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-colors duration-300"
+            className="w-22 h-8 text-center p-0.5 m-0.5 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-colors duration-200"
           >
             Contact
           </a>
@@ -142,7 +142,7 @@ const HomeEN = () => {
               Work Experience
             </span>
           </h3>
-          <div className="m-10 hover:scale-105 transition-transform duration-300">
+          <div className="m-10 hover:scale-105 transition-transform duration-200">
             <ElectricBorder
               color={currentThemeState === "luxury" ? "#7df9ff" : "#7df9ff"}
               speed={1}
@@ -189,7 +189,7 @@ const HomeEN = () => {
               </div>
             </ElectricBorder>
           </div>
-          <div className="m-10 hover:scale-105 transition-transform duration-300">
+          <div className="m-10 hover:scale-105 transition-transform duration-200">
             <ElectricBorder
               color={currentThemeState === "luxury" ? "#7df9ff" : "#7df9ff"}
               speed={1}
@@ -229,7 +229,7 @@ const HomeEN = () => {
               </div>
             </ElectricBorder>
           </div>
-          <div className="m-10 hover:scale-105 transition-transform duration-300">
+          <div className="m-10 hover:scale-105 transition-transform duration-200">
             <ElectricBorder
               color={currentThemeState === "luxury" ? "#7df9ff" : "#7df9ff"}
               speed={1}
@@ -264,7 +264,7 @@ const HomeEN = () => {
               </div>
             </ElectricBorder>
           </div>
-          <div className="m-10 hover:scale-105 transition-transform duration-300">
+          <div className="m-10 hover:scale-105 transition-transform duration-200">
             <ElectricBorder
               color={currentThemeState === "luxury" ? "#7df9ff" : "#7df9ff"}
               speed={1}
@@ -295,7 +295,7 @@ const HomeEN = () => {
               </div>
             </ElectricBorder>
           </div>
-          <div className="m-10 hover:scale-105 transition-transform duration-300">
+          <div className="m-10 hover:scale-105 transition-transform duration-200">
             <ElectricBorder
               color={currentThemeState === "luxury" ? "#7df9ff" : "#7df9ff"}
               speed={1}
@@ -345,7 +345,7 @@ const HomeEN = () => {
               Academic education
             </span>
           </h3>
-          <div className="m-10 hover:scale-105 transition-transform duration-300">
+          <div className="m-10 hover:scale-105 transition-transform duration-200">
             <ElectricBorder
               color={currentThemeState === "luxury" ? "#7df9ff" : "#7df9ff"}
               speed={1}
@@ -389,7 +389,7 @@ const HomeEN = () => {
             </ElectricBorder>
           </div>
 
-          <div className="m-10 hover:scale-105 transition-transform duration-300">
+          <div className="m-10 hover:scale-105 transition-transform duration-200">
             <ElectricBorder
               color={currentThemeState === "luxury" ? "#7df9ff" : "#7df9ff"}
               speed={1}
@@ -433,7 +433,7 @@ const HomeEN = () => {
             </ElectricBorder>
           </div>
 
-          <div className="m-10 hover:scale-105 transition-transform duration-3000">
+          <div className="m-10 hover:scale-105 transition-transform duration-200">
             <ElectricBorder
               color={currentThemeState === "luxury" ? "#7df9ff" : "#7df9ff"}
               speed={1}
