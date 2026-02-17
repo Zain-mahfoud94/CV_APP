@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes:
+    luxury --default,
+    nord --prefersdark;
+}
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
