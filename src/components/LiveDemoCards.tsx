@@ -37,7 +37,7 @@ export default function LiveDemoCards({ language }: { language: string }) {
                 <p className="text-sm opacity-80 mb-4">{project.description}</p>
 
                 {/* Stack */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-6 justify-center">
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
@@ -50,7 +50,7 @@ export default function LiveDemoCards({ language }: { language: string }) {
               </div>
 
               {/* Actions */}
-              <div className="flex gap-3">
+              <div className="flex gap-3 justify-center items-center">
                 {project.demo && (
                   <a
                     href={project.demo}
@@ -58,13 +58,13 @@ export default function LiveDemoCards({ language }: { language: string }) {
                     className="flex-1 text-center text-sm font-semibold px-4 py-2 rounded-xl
                              bg-blue-500 text-white hover:bg-blue-600 transition-colors"
                   >
-                    Live Demo
+                    Website
                   </a>
                 )}
                 <a
                   href={project.github}
                   target="_blank"
-                  className="flex-1 text-center text-sm font-semibold px-4 py-2 rounded-xl
+                  className="flex-1  text-center text-sm font-semibold px-4 py-2 rounded-xl
                            border border-black/20 dark:border-white/20
                            hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
                 >

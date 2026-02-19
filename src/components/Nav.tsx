@@ -56,7 +56,7 @@ const Nav = ({
               className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 shadow-sm ml-2"
             >
               <li>
-                <a href="#home">1</a>
+                <a href="#home">{home}</a>
               </li>
               <li>
                 <a href="#about">{about}</a>

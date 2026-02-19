@@ -46,7 +46,7 @@ const HomeEN = () => {
   return (
     <div className="flex flex-col gap-10">
       <Nav
-        page_name={"Curriculum Vitae"}
+        page_name={"CV"}
         home={"Home"}
         about={"About"}
         skills={"Skills"}
@@ -58,8 +58,11 @@ const HomeEN = () => {
         currentPage={"/en"}
         handleChange={handleChange}
       />
-      <section id="home" className="w-11/12 flex flex-row mx-auto pt-5 pb-5">
-        <div className="basis-2/3 justify-center flex flex-col items-center px-10 gap-4">
+      <section
+        id="home"
+        className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-4 mx-auto"
+      >
+        <div className="flex flex-col items-center px-10 gap-4">
           <h2 className="text-5xl mb-2 font-semibold text-center">
             Hello, I am{" "}
             <span className="font-bold bg-linear-to-r from-blue-500 to-teal-400 text-transparent bg-clip-text">
@@ -80,7 +83,7 @@ const HomeEN = () => {
             Contact
           </a>
         </div>
-        <div className=" basis-1/3 avatar flex items-center justify-center">
+        <div className="avatar flex items-center justify-center">
           <div className="ring-primary ring-offset-base-100 w-72 rounded-full ring-2 ring-offset-2">
             <img src={foto} alt="Profile" />
           </div>
@@ -89,7 +92,7 @@ const HomeEN = () => {
 
       <section
         id="about"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         <h3 className="text-center text-5xl ">
           <span className="bg-linear-to-r from-blue-500 to-teal-400 text-transparent bg-clip-text">
@@ -106,7 +109,7 @@ const HomeEN = () => {
       </section>
       <section
         id="skills-section"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         {/* ================= SKILLS ================= */}
         <AnimatedSection className="py-20 bg-base-300 rounded-4xl" id="skills">
@@ -130,7 +133,7 @@ const HomeEN = () => {
       </section>
       <section
         id="experience-section"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         {/* ================= Experience ================= */}
         <AnimatedSection
@@ -159,28 +162,27 @@ const HomeEN = () => {
             >
               <div className="card w-4/5 mx-auto mb-10 rounded-3xl">
                 <div className="card-body">
-                  <h4 className="card-title justify-center text-xl font-bold">
+                  <h4 className="card-title justify-center font-bold">
                     LMS Integration Engineer - Mynd GmbH - Frankfurt am Main -
                     Germany
                   </h4>
-                  <p className="opacity-80 text-lg  text  mb-0.5">
-                    Mar. 2025 - Feb. 2026
-                  </p>
+                  <p className="opacity-80 mb-0.5">Mar. 2025 - Feb. 2026</p>
+                  <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                   <ul>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Development of customized code solutions for the company's
                       proprietary learning management system (LMS) and internal
                       applications
                     </li>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Implementation of front-end and back-end functions with
                       HTML, CSS, JavaScript, and JavaScript libraries (e.g.,
                       Express.js and Node.js)
                     </li>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Database design and management with MySQL or PostgreSQL
                     </li>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Deployment and server management with Nginx, PM2, and
                       Docker
                     </li>
@@ -206,21 +208,20 @@ const HomeEN = () => {
             >
               <div className="card w-4/5 mx-auto mb-10 rounded-3xl">
                 <div className="card-body">
-                  <h4 className="card-title justify-center text-xl font-bold">
+                  <h4 className="card-title justify-center font-bold">
                     Student Job - BackWerk - Kassel - Germany
                   </h4>
-                  <p className="opacity-80 text-lg  text  mb-0.5">
-                    Nov. 2020 - Feb. 2025
-                  </p>
+                  <p className="opacity-80 mb-0.5">Nov. 2020 - Feb. 2025</p>
+                  <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                   <ul>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Supporting the sales team and customer service
                     </li>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Responsibility for product presentation and maintenance of
                       the sales area
                     </li>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Further development of communication and organizational
                       skills
                     </li>
@@ -246,14 +247,13 @@ const HomeEN = () => {
             >
               <div className="card w-4/5 mx-auto mb-10 rounded-3xl">
                 <div className="card-body">
-                  <h4 className="card-title justify-center text-xl font-bold">
+                  <h4 className="card-title justify-center font-bold">
                     Freelancer Android developer - StoreXweb - Bologna - Italy
                   </h4>
-                  <p className="opacity-80 text-lg  text  mb-0.5">
-                    Jun. 2017 - Aug. 2018
-                  </p>
+                  <p className="opacity-80 mb-0.5">Jun. 2017 - Aug. 2018</p>
+                  <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                   <ul>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Development and maintenance of various Android
                       applications using modern technologies such as barcode
                       scanning, digital signatures, offline data storage, and
@@ -283,11 +283,10 @@ const HomeEN = () => {
                 <h4 className="card-title justify-center text-xl font-bold mb-1">
                   Android developer - Smart Source Group - Lattakia - Syria
                 </h4>
-                <p className="opacity-80 text-lg  text  mb-0.5">
-                  May. 2016 - Aug. 2017
-                </p>
+                <p className="opacity-80 mb-0.5">May. 2016 - Aug. 2017</p>
+                <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                 <ul>
-                  <li className="text-lg">
+                  <li className="text-base">
                     Development of user-friendly Android apps for scheduling and
                     data storage with a focus on appealing UX/UI designs
                   </li>
@@ -311,15 +310,14 @@ const HomeEN = () => {
               }}
             >
               <div className="card-body">
-                <h4 className="card-title justify-center text-xl font-bold mb-1">
+                <h4 className="card-title justify-center font-bold mb-1">
                   Android developer - Prime Technologies s.r.o. - Lattakia -
                   Syria
                 </h4>
-                <p className="opacity-80 text-lg text  mb-0.5">
-                  May 2015 - Jun. 2017
-                </p>
+                <p className="opacity-80 mb-0.5">May 2015 - Jun. 2017</p>
+                <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                 <ul>
-                  <li className="text-lg">
+                  <li className="text-base">
                     Collaboration on a search engine app with APIs,
                     object-oriented programming (OOP), design patterns, and
                     authorization management
@@ -333,7 +331,7 @@ const HomeEN = () => {
 
       <section
         id="education-section"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         {/* ================= EDUCATION ================= */}
         <AnimatedSection
@@ -361,26 +359,23 @@ const HomeEN = () => {
               }}
             >
               <div className="card-body">
-                <h4 className="card-title justify-center text-2xl font-bold mb-1">
+                <h4 className="card-title justify-center font-bold mb-1">
                   Electrical Engineering/Computer Science - Kassel University -
                   Kassel - Germany
                 </h4>
-                <p className="opacity-80 text-xl text mb-0.5">
-                  Oct. 2020 - May. 2024
-                </p>
+                <p className="opacity-80 mb-0.5">Oct. 2020 - May. 2024</p>
+                <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                 <ul>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">Degree: </span> Master
-                    of Science, grade 2.2
+                  <li className="text-base">
+                    <span className="font-bold">Degree: </span> Master of
+                    Science, grade 2.2
                   </li>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">Focus: </span>
+                  <li className="text-base">
+                    <span className="font-bold">Focus: </span>
                     Computational Intelligence & Data Analytics
                   </li>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">
-                      Master's thesis topic:{" "}
-                    </span>
+                  <li className="text-base">
+                    <span className="font-bold">Master's thesis topic: </span>
                     Anomaly detection in the latent space of variational
                     autoencoders (submission date: May 14, 2024)
                   </li>
@@ -405,26 +400,23 @@ const HomeEN = () => {
               }}
             >
               <div className="card-body">
-                <h4 className="card-title justify-center text-2xl font-bold mb-1">
+                <h4 className="card-title justify-center font-bold mb-1">
                   Faculty of Computer Engineering - Tishreen University -
                   Latakia - Syria
                 </h4>
-                <p className="opacity-80 text-xl text mb-0.5">
-                  Oct. 2012 - Dec. 2017
-                </p>
+                <p className="opacity-80  mb-0.5">Oct. 2012 - Dec. 2017</p>
+                <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                 <ul>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">Degree: </span>Bachelor
-                    of Science in Computer Science, grade 78.98%
+                  <li className="text-base">
+                    <span className="font-bold">Degree: </span>Bachelor of
+                    Science in Computer Science, grade 78.98%
                   </li>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">Focus: </span>Software
+                  <li className="text-base">
+                    <span className="font-bold">Focus: </span>Software
                     Engineering and information systems technology
                   </li>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">
-                      Bachelor thesis topic:
-                    </span>
+                  <li className="text-base">
+                    <span className="font-bold">Bachelor thesis topic: </span>
                     Drawing images using deep learning (submission date: July
                     10, 2017)
                   </li>
@@ -449,14 +441,13 @@ const HomeEN = () => {
               }}
             >
               <div className="card-body">
-                <h4 className="card-title justify-center text-2xl font-bold mb-1">
+                <h4 className="card-title justify-center font-bold mb-1">
                   High school - Al Thawra School - Latakia - Syria
                 </h4>
-                <p className="opacity-80 text-xl text mb-0.5">
-                  Sep. 2009 - Jun. 2012
-                </p>
+                <p className="opacity-80 mb-0.5">Sep. 2009 - Jun. 2012</p>
+                <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                 <ul>
-                  <li className="text-xl">
+                  <li className="text-base">
                     High school diploma in science, grade 91.25%
                   </li>
                 </ul>
@@ -468,7 +459,7 @@ const HomeEN = () => {
 
       <section
         id="Portfolio-section"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         {/* ================= Portfolio ================= */}
         <AnimatedSection
@@ -487,7 +478,7 @@ const HomeEN = () => {
 
       <section
         id="contact-section"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         {/* ================= CONTACT ================= */}
         <AnimatedSection className="py-5 bg-base-300 rounded-4xl" id="contact">

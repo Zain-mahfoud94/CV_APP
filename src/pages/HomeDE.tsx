@@ -58,8 +58,11 @@ const HomeDE = () => {
         currentPage={"/"}
         handleChange={handleChange}
       />
-      <section id="home" className="w-11/12 flex flex-row mx-auto pt-5 pb-5">
-        <div className="basis-2/3 justify-center flex flex-col items-center px-10 gap-4">
+      <section
+        id="home"
+        className=" w-full grid grid-cols-1 sm:grid-cols-2 gap-10  sm:gap-4 mx-auto"
+      >
+        <div className="flex flex-col items-center px-10 gap-4">
           <h2 className="text-5xl mb-2 font-semibold text-center">
             Hallo, ich bin{" "}
             <span className="font-bold bg-linear-to-r from-blue-500 to-teal-400 text-transparent bg-clip-text">
@@ -80,7 +83,7 @@ const HomeDE = () => {
             Kontakt
           </a>
         </div>
-        <div className=" basis-1/3 avatar flex items-center justify-center">
+        <div className="avatar flex items-center justify-center">
           <div className="ring-primary ring-offset-base-100 w-72 rounded-full ring-2 ring-offset-2">
             <img src={foto} alt="Profile" />
           </div>
@@ -89,7 +92,7 @@ const HomeDE = () => {
 
       <section
         id="about"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         <h3 className="text-center text-5xl ">
           <span className="bg-linear-to-r from-blue-500 to-teal-400 text-transparent bg-clip-text">
@@ -107,7 +110,7 @@ const HomeDE = () => {
       </section>
       <section
         id="skills-section"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         {/* ================= SKILLS ================= */}
         <AnimatedSection className="py-20 bg-base-300 rounded-4xl" id="skills">
@@ -131,7 +134,7 @@ const HomeDE = () => {
       </section>
       <section
         id="experience-section"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         {/* ================= Experience ================= */}
         <AnimatedSection
@@ -160,28 +163,27 @@ const HomeDE = () => {
             >
               <div className="card w-4/5 mx-auto mb-10 rounded-3xl">
                 <div className="card-body">
-                  <h4 className="card-title justify-center text-xl font-bold">
+                  <h4 className="card-title justify-center font-bold">
                     LMS-Integrationsingenieur – Mynd GmbH – Frankfurt am Main –
                     Deutschland
                   </h4>
-                  <p className="opacity-80 text-lg  text  mb-0.5">
-                    Mar. 2025 - Feb. 2026
-                  </p>
+                  <p className="opacity-80 mb-0.5">Mar. 2025 - Feb. 2026</p>
+                  <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                   <ul>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Entwicklung maßgeschneiderter Codelösungen für das
-                      firmeneigene Lernmanagementsystem (LMS) und interne
+                      firmeneigene Lernmanagement-system (LMS) und interne
                       Anwendungen
                     </li>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Implementierung von Frontend- und Backend-Funktionen mit
                       HTML, CSS, JavaScript und JavaScript-Bibliotheken (z. B.
                       Express.js und Node.js)
                     </li>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Datenbankdesign und -verwaltung mit MySQL oder PostgreSQL
                     </li>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Bereitstellung und Serververwaltung mit Nginx, PM2 und
                       Docker
                     </li>
@@ -207,21 +209,20 @@ const HomeDE = () => {
             >
               <div className="card w-4/5 mx-auto mb-10 rounded-3xl">
                 <div className="card-body">
-                  <h4 className="card-title justify-center text-xl font-bold">
+                  <h4 className="card-title justify-center font-bold">
                     Studentenjob – BackWerk – Kassel – Deutschland
                   </h4>
-                  <p className="opacity-80 text-lg  text  mb-0.5">
-                    Nov. 2020 - Feb. 2025
-                  </p>
+                  <p className="opacity-80  mb-0.5">Nov. 2020 - Feb. 2025</p>
+                  <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                   <ul>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Unterstützung des Verkaufsteams und der Kundenservice
                     </li>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Verantwortung für Produktpräsentation und Wartung des
                       Verkaufsraums
                     </li>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Weiterentwicklung von Kommunikations- und
                       Organisationsfähigkeiten
                     </li>
@@ -247,15 +248,14 @@ const HomeDE = () => {
             >
               <div className="card w-4/5 mx-auto mb-10 rounded-3xl">
                 <div className="card-body">
-                  <h4 className="card-title justify-center text-xl font-bold">
+                  <h4 className="card-title justify-center font-bold">
                     Freiberuflicher Android-Entwickler – StoreXweb – Bologna –
                     Italien
                   </h4>
-                  <p className="opacity-80 text-lg  text  mb-0.5">
-                    Jun. 2017 - Aug. 2018
-                  </p>
+                  <p className="opacity-80 mb-0.5">Jun. 2017 - Aug. 2018</p>
+                  <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                   <ul>
-                    <li className="text-lg">
+                    <li className="text-base">
                       Entwicklung und Wartung verschiedener Android-Anwendungen
                       unter Verwendung moderner Technologien wie
                       Barcode-Scanning, digitale Signaturen,
@@ -282,14 +282,13 @@ const HomeDE = () => {
               }}
             >
               <div className="card-body">
-                <h4 className="card-title justify-center text-xl font-bold mb-1">
+                <h4 className="card-title justify-center font-bold mb-1">
                   Android-Entwickler – Smart Source Group – Latakia – Syrien
                 </h4>
-                <p className="opacity-80 text-lg  text  mb-0.5">
-                  May. 2016 - Aug. 2017
-                </p>
+                <p className="opacity-80  mb-0.5">May. 2016 - Aug. 2017</p>
+                <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                 <ul>
-                  <li className="text-lg">
+                  <li className="text-base">
                     Entwicklung benutzerfreundlicher Android-Apps für die
                     Terminplanung und Datenspeicherung mit Schwerpunkt auf
                     ansprechenden UX/UI-Designs, Fehlerbehebung und
@@ -315,15 +314,14 @@ const HomeDE = () => {
               }}
             >
               <div className="card-body">
-                <h4 className="card-title justify-center text-xl font-bold mb-1">
+                <h4 className="card-title justify-center font-bold mb-1">
                   Android-Entwickler – Prime Technologies s.r.o. – Latakia –
                   Syrien
                 </h4>
-                <p className="opacity-80 text-lg text  mb-0.5">
-                  May 2015 - Jun. 2017
-                </p>
+                <p className="opacity-80 mb-0.5">May 2015 - Jun. 2017</p>
+                <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                 <ul>
-                  <li className="text-lg">
+                  <li className="text-base">
                     Zusammenarbeit an einer Suchmaschinen-App mit APIs,
                     objektorientierter Programmierung (OOP), Designmustern und
                     Autorisierungsmanagement
@@ -337,7 +335,7 @@ const HomeDE = () => {
 
       <section
         id="education-section"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         {/* ================= EDUCATION ================= */}
         <AnimatedSection
@@ -365,26 +363,23 @@ const HomeDE = () => {
               }}
             >
               <div className="card-body">
-                <h4 className="card-title justify-center text-2xl font-bold mb-1">
-                  Elektrotechnik/Informatik – Universität Kassel – Kassel –
+                <h4 className="card-title justify-center font-bold mb-1">
+                  Elektrotechnik / Informatik – Universität Kassel – Kassel –
                   Deutschland
                 </h4>
-                <p className="opacity-80 text-xl text mb-0.5">
-                  Oct. 2020 - May. 2024
-                </p>
+                <p className="opacity-80 mb-0.5">Oct. 2020 - May. 2024</p>
+                <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                 <ul>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">Abschluss: </span>{" "}
-                    Master of Science, Note 2,2
+                  <li className="text-base">
+                    <span className="font-bold">Abschluss: </span> Master of
+                    Science, Note 2,2
                   </li>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">Fokus: </span>
+                  <li className="text-base">
+                    <span className="font-bold">Fokus: </span>
                     Computational Intelligence & Data Analytics
                   </li>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">
-                      Thema der Masterarbeit:{" "}
-                    </span>
+                  <li className="text-base">
+                    <span className="font-bold">Thema der Masterarbeit: </span>
                     Anomalieerkennung im latenten Raum von variationalen
                     Autoencodern (Einreichungsdatum: 14. Mai 2024)
                   </li>
@@ -409,26 +404,23 @@ const HomeDE = () => {
               }}
             >
               <div className="card-body">
-                <h4 className="card-title justify-center text-2xl font-bold mb-1">
+                <h4 className="card-title justify-center font-bold mb-1">
                   Fakultät für Computertechnik – Tishreen-Universität – Latakia
                   – Syrien
                 </h4>
-                <p className="opacity-80 text-xl text mb-0.5">
-                  Oct. 2012 - Dec. 2017
-                </p>
+                <p className="opacity-80 mb-0.5">Oct. 2012 - Dec. 2017</p>
+                <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                 <ul>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">Abschluss: </span>
+                  <li className="text-base">
+                    <span className="font-bold">Abschluss: </span>
                     Bachelor of Science in Informatik, Note 78,98 %
                   </li>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">Fokus: </span>
+                  <li className="text-base">
+                    <span className="font-bold">Fokus: </span>
                     Softwareentwicklung und Informationstechnologie
                   </li>
-                  <li className="text-xl">
-                    <span className="font-bold text-xl">
-                      Thema der Bachelorarbeit:
-                    </span>
+                  <li className="text-base">
+                    <span className="font-bold">Thema der Bachelorarbeit:</span>
                     Drawing images using deep learning (Einreichungsdatum: 10.
                     Juli 2017)
                   </li>
@@ -453,14 +445,13 @@ const HomeDE = () => {
               }}
             >
               <div className="card-body">
-                <h4 className="card-title justify-center text-2xl font-bold mb-1">
+                <h4 className="card-title justify-center font-bold mb-1">
                   Gymnasium – Al Thawra Schule – Latakia – Syrien
                 </h4>
-                <p className="opacity-80 text-xl text mb-0.5">
-                  Sep. 2009 - Jun. 2012
-                </p>
+                <p className="opacity-80 mb-0.5">Sep. 2009 - Jun. 2012</p>
+                <hr className="border-t border-gray-300 dark:border-gray-600 my-2" />
                 <ul>
-                  <li className="text-xl">
+                  <li className="text-base">
                     Abitur in Naturwissenschaften, Note 91,25 %
                   </li>
                 </ul>
@@ -472,7 +463,7 @@ const HomeDE = () => {
 
       <section
         id="Portfolio-section"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         {/* ================= Portfolio ================= */}
         <AnimatedSection
@@ -491,7 +482,7 @@ const HomeDE = () => {
 
       <section
         id="contact-section"
-        className="w-11/12 flex flex-col p-5 gap-2 text-center mx-auto"
+        className="w-full flex flex-col p-5 gap-2 text-center mx-auto"
       >
         {/* ================= CONTACT ================= */}
         <AnimatedSection className="py-5 bg-base-300 rounded-4xl" id="contact">
